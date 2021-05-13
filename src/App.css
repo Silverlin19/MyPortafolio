@@ -9,6 +9,7 @@ body {
   --primary-blue: #1c24b7;
   --primary-red: #b71c4b;
   --primary-dark: rgba(255, 255, 255, 0);
+  --primary-hover-red: rgb(188, 12, 12);
 }
 
 /* Logo */
@@ -60,4 +61,64 @@ nav ul li {
 
 .navbar-nav > li > a:hover {
   border-top: 0.1875rem solid var(--primary-white);
+}
+
+/* Header */
+
+.header-wrapper {
+  position: relative;
+  background: url(markus-spiske-MI9-PY5cyNs-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+}
+
+.main-info {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Orbitron", sans-serif;
+}
+
+.main-info h1 {
+  color: var(--primary-white);
+  background-color: rgba(45, 16, 16, 0.79);
+  /* text-transform: uppercase; */
+}
+
+/* Header Buttons */
+
+.btn-main-offer {
+  background-image: linear-gradient(
+    to right,
+    #dc2424 0%,
+    #4a569d 51%,
+    #dc2424 100%
+  );
+}
+
+.btn-main-offer {
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  /* border-radius: 10px; */
+  display: block;
+}
+
+.btn-main-offer:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
 }
